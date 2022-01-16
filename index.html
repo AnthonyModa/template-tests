@@ -4,14 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Quote generator</title>
     <!-- Il faudra que je change ceci une fois que j'aurai mon propre site web, il suffira de changer css-tricks.com par le site en question -->
     <link rel="icon" type="image/png" href="https://www.google.com/s2/favicons?domain=css-tricks.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Script -->
-    <script src="script.js"></script>
+    <div class="quote-container" id="quote-container">
+        <!-- Quote -->
+        <div class="quote-text">
+            <i class="i fas fa-quote-left"></i>
+            <span id="quote"></span>
+        </div>
+        <!-- Author -->
+        <div class="quote-author">
+            <span id="author"></span>
+        </div>
+        <!-- Buttons -->
+        <div class="button-container">
+            <button class="new-quote" id="new-quote">New Quote</button>
+        </div>
+    </div>
+
+<!-- Loader -->
+<div class="loader" id="loader"></div>
+            
+<!-- Script -->
+<script src="script.js"></script>
 </body>
 </html>
